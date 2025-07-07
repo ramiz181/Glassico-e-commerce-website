@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Fendi – Female Sunglasses – WF-07",
+        "price": 1709,
+        "image": "assets/images/g7.png"
+    },
+    {
+        "id": 2,
+        "name": "Chanel – Male Sunglasses – WF-04",
+        "price": 1439,
+        "image": "assets/images/p1.jpeg"
+    },
+    {
+        "id": 3,
+        "name": "Thome Black – Male glasses – WF-15",
+        "price": 1709,
+        "image": "assets/images/p2.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Thome Browne – Female Sunglasses – WF-157",
+        "price": 1799,
+        "image": "assets/images/p3.jpeg"
+    },
+    {
+        "id": 5,
+        "name": "Louis Vuitton – Glasses – WF-24",
+        "price": 1989,
+        "image": "assets/images/p4.jpeg"
+    },
+    {
+        "id": 6,
+        "name": "Fendi – Female Sunglasses – WF-01",
+        "price": 1209,
+        "image": "assets/images/p5.jpeg"
+    },
+    {
+        "id": 7,
+        "name": "Oakley - 9807 - Acetate - Rectangle - Eyewear",
+        "price": 3900,
+        "image": "assets/images/p7.png"
+    },
+    {
+        "id": 8,
+        "name": "Porsche Design - 003 Metal - Polarized - Sunglasses",
+        "price": 1709,
+        "image": "assets/images/p6.png"
+    }
+]

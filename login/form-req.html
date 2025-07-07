@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="search-box">
+        <input type="text">
+        <div class="result"></div>
+    </div>
+
+    <script>
+        function debounce(func, delay) {
+            let timer;
+            return function (...args) {
+                clearTimeout(timer);
+                timer = setTimeout(() => func.apply(this, args), delay);
+            };
+        }
+
+        // Example: Debounced function for search
+        function searchHandler(event) {
+            document.querySelector('.result').innerHTML = "Searching for:" + event.target.value;
+        }
+
+        document.getElementById("search-box").addEventListener("input", debounce(searchHandler, 500));
+
+    </script>
+</body>
+
+</html>

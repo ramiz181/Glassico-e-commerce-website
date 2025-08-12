@@ -30,7 +30,10 @@ cartIcon.addEventListener('click', () => {
 
 document.addEventListener('click', (event) => {
     // 
-    if (!cartIcon.contains(event.target) && !cartSection.contains(event.target) || event.target.classList.contains('close')) {
+    if (!cartIcon.contains(event.target) &&
+        !cartSection.contains(event.target) &&
+        !event.target.classList.contains('remove-btn') ||
+        event.target.classList.contains('close')) {
         body.classList.remove("showCart");
     }
 })

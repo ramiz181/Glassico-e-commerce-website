@@ -11,7 +11,7 @@
     cursor: pointer;
 }
 
-.cart-quantity {
+#cart-quantity {
     position: absolute;
     font-size: 10px;
     left: 10px;

@@ -29,8 +29,8 @@ cartIcon.addEventListener('click', () => {
 })
 
 document.addEventListener('click', (event) => {
-    // !cartIcon.contains(event.target) && !cartSection.contains(event.target) || 
-    if (event.target.classList.contains('close')) {
+    // 
+    if (!cartIcon.contains(event.target) && !cartSection.contains(event.target) || event.target.classList.contains('close')) {
         body.classList.remove("showCart");
     }
 })
@@ -147,10 +147,12 @@ function addToCart(event) {
         })
 }
 
+
 // jub page refresh hoga to cart panel pr product load kry ga
 
 document.addEventListener("DOMContentLoaded", () => {
     pushToCartDisplay();
+    document.getElementById('cart-quantity').innerHTML = cartArr.length;
     document.getElementById('ottla').innerHTML = totalAmount;
     // calculateTotal();
     addToCart();
@@ -221,6 +223,8 @@ function calculateTotal(productPrice, subAMount) {
     else {
         totalAmount += productPrice;
     }
+
+    document.getElementById('cart-quantity').innerHTML = cartArr.length;
     document.getElementById('ottla').innerHTML = totalAmount;
 
     localStorage.setItem("totalAmountCart", JSON.stringify(totalAmount));
